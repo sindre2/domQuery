@@ -1,0 +1,117 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    margin: 15% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+img
+{
+    width: 200px;
+    position: relative;
+    top: -700px;
+    left: 400px;
+    display: none;
+}
+
+.zeDiv
+{
+    width: 200px;
+    height: 70px;
+    background-color: aquamarine;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+body button
+{
+    margin-bottom: 2rem;
+}
+
+
+/* --- Shake animation --- */
+
+.shake
+{
+    animation: shake 0.7s;
+}
+
+@keyframes shake
+{
+    0% {rotate: 5deg;}
+    5% {rotate: -5deg;}
+    10% {rotate: 5deg;}
+    15% {rotate: -5deg;}
+    20% {rotate: 5deg;}
+    25% {rotate: -5deg;}
+    30% {rotate: 5deg;}
+    35% {rotate: -5deg;}
+    40% {rotate: 5deg;}
+    45% {rotate: -5deg;}
+    50% {rotate: 5deg;}
+    55% {rotate: -5deg;}
+    60% {rotate: 5deg;}
+    65% {rotate: -5deg;}
+    70% {rotate: 5deg;}
+    75% {rotate: -5deg;}
+    80% {rotate: 5deg;}
+    85% {rotate: -5deg;}
+    90% {rotate: 5deg;}
+    95% {rotate: -5deg;}
+    100% {rotate: 5deg;}
+}
+
+
+
+/* --- Spin animation --- */
+
+.spin
+{
+    animation: spin 0.5s;
+}
+
+@keyframes spin
+{
+    100% {rotate: 1080deg};
+}
+
+
+/* --- Fly animation --- */
+
+.fly
+{
+    animation: fly 500ms;
+}
+
+@keyframes fly
+{
+    0% {left:100px; top: 50px;}
+    20% {left: 500px; top: 0px;}
+    100% {left: 500px; top: 1000px;}
+}
+
+/* --- Bear animation --- */
+
+.bear
+{
+    display: block;
+    animation: bear 200ms;
+}
+
+@keyframes bear
+{
+    0%{rotate: 0deg;}
+    80%{rotate: -45deg; transform: scale(2);}
+    100%{rotate: 0deg; transform: scale(1);}
+}
+
